@@ -1,0 +1,30 @@
+{{#if usuarios}}
+
+<div class="container">
+  <h2  style=" text-align: center; font-size: 1.5vw; color: black">Ranking DIFARE SOCCER-PINBAL</h2>
+<br><br>
+<div class="table-responsive">
+  <table class="table table-bordered table-hover table-striped table-sm">
+    <thead>
+      <tr>
+
+        <th>Nombre</th>
+        <th>fARMACIA </th>
+        <th>Puntuacion</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each usuarios}}
+        <tr>
+          <td>{{name}} </td>
+          <td>{{farmacia}}</td>
+          <td>{{puntuacion}}</td>
+
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+
+{{/if}}
